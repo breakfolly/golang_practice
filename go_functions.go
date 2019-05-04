@@ -32,3 +32,14 @@ func sum(nums ...int) (int, int) {
 	}
 	return count, s
 }
+
+/* 이렇게도 쓸 수 있다.
+func sum(nums ...int) (count int, total int) {
+	for _, n := range nums {
+		total += n
+	}
+
+	count = len(nums)
+	return
+}
+*/
